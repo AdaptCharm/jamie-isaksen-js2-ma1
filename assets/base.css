@@ -1,0 +1,25 @@
+:root {
+  --background: #fff;
+  --foreground: #000;
+
+  --accents-2: #eaeaea;
+  --accents-4: #888;
+  --accents-5: #666;
+
+  --nav-height: 72px;
+
+  --shadow-small: 0 5px 10px rgba(0, 0, 0, 0.12);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.shadow-small {
+  box-shadow: var(--shadow-small);
+}
+
+.hover\:shadow-medium:hover {
+  box-shadow: var(--shadow-medium);
+}
+
+.border-accents-2 {
+  border-color: var(--accents-2);
+}

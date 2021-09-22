@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Javasscript 2</title>
+    <link href="assets/tailwind.min.css" rel="stylesheet" />
+    <link href="assets/base.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,=" />
+  </head>
+
+  <body class="flex flex-col gap-y-10">
+    <div class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto p-6 sm:px-6 lg:px-8">
+        <div class="flex items-center">
+          <span class="font-light">The MA1 submission for Javascript 2.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div class="max-w-7xl mx-auto p-6 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-y-4 sm:flex-row sm:justify-between">
+          <h1 class="text-4xl font-bold">Products</h1>
+          <div class="relative flex items-center group">
+            <div
+              class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none "
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+                shape-rendering="geometricPrecision"
+                style="color: var(--accents-4)"
+              >
+                <path
+                  d="M11 17.25a6.25 6.25 0 110-12.5 6.25 6.25 0 010 12.5z"
+                />
+                <path d="M16 16l4.5 4.5" />
+              </svg>
+            </div>
+            <input
+              class="bg-white inline-flex w-full h-10 border border-accents-2 focus:border-black rounded-md transition duration-150 pl-10 pr-3 rounded-md focus:outline-none"
+              type="search"
+              id="search"
+              placeholder="Search..."
+            />
+          </div>
+        </div>
+        <div
+          class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+          id="result"
+        >
+          <div id="loading">Loading...</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
